@@ -96,6 +96,12 @@ class Item extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'buyingOptions'
         ],
+        'categoryId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'categoryId'
+        ],
         'categoryPath' => [
             'type' => 'string',
             'repeatable' => false,
