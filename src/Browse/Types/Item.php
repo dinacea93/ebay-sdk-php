@@ -17,6 +17,7 @@ namespace DTS\eBaySDK\Browse\Types;
  * @property integer $bidCount
  * @property string $brand
  * @property string[] $buyingOptions
+ * @property string $categoryId
  * @property string $categoryPath
  * @property string $color
  * @property string $condition
@@ -32,6 +33,7 @@ namespace DTS\eBaySDK\Browse\Types;
  * @property string $itemAffiliateWebUrl
  * @property string $itemEndDate
  * @property string $itemId
+ * @property string $legacyItemId
  * @property \DTS\eBaySDK\Browse\Types\Address $itemLocation
  * @property string $itemWebUrl
  * @property \DTS\eBaySDK\Browse\Types\TypedNameValue[] $localizedAspects
@@ -191,6 +193,12 @@ class Item extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemId'
+        ],
+        'legacyItemId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'legacyItemId'
         ],
         'itemLocation' => [
             'type' => 'DTS\eBaySDK\Browse\Types\Address',
