@@ -28,6 +28,7 @@ namespace DTS\eBaySDK\Browse\Types;
  * @property string $itemGroupType
  * @property string $itemHref
  * @property string $itemId
+ * @property string $legacyItemId
  * @property \DTS\eBaySDK\Browse\Types\ItemLocationImpl $itemLocation
  * @property string $itemWebUrl
  * @property \DTS\eBaySDK\Browse\Types\MarketingPrice $marketingPrice
@@ -151,6 +152,12 @@ class ItemSummary extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemWebUrl'
+        ],
+        'legacyItemId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'legacyItemId'
         ],
         'marketingPrice' => [
             'type' => 'DTS\eBaySDK\Browse\Types\MarketingPrice',
