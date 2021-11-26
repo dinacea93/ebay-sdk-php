@@ -290,6 +290,12 @@ class Item extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'seller'
         ],
+        'sellerItemRevision' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'sellerItemRevision'
+        ],
         'shippingOptions' => [
             'type' => 'DTS\eBaySDK\Browse\Types\ShippingOption',
             'repeatable' => true,
