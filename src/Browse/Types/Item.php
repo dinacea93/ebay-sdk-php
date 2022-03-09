@@ -61,6 +61,7 @@ namespace DTS\eBaySDK\Browse\Types;
  * @property boolean $topRatedBuyingExperience
  * @property integer $uniqueBidderCount
  * @property \DTS\eBaySDK\Browse\Types\ErrorDetailV3[] $warnings
+ * @property integer $watchCount
  */
 class Item extends \DTS\eBaySDK\Types\BaseType
 {
@@ -367,6 +368,12 @@ class Item extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'
+        ],
+        'watchCount' => [
+            'type' => 'integer',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'watchCount'
         ]
     ];
 
