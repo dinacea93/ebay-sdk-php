@@ -28,6 +28,7 @@ namespace DTS\eBaySDK\Browse\Types;
  * @property string $itemGroupType
  * @property string $itemHref
  * @property string $itemId
+ * @property string $legacyItemId
  * @property \DTS\eBaySDK\Browse\Types\ItemLocationImpl $itemLocation
  * @property string $itemWebUrl
  * @property \DTS\eBaySDK\Browse\Types\MarketingPrice $marketingPrice
@@ -36,6 +37,7 @@ namespace DTS\eBaySDK\Browse\Types;
  * @property \DTS\eBaySDK\Browse\Types\Seller $seller
  * @property \DTS\eBaySDK\Browse\Types\ShippingOptionSummary[] $shippingOptions
  * @property \DTS\eBaySDK\Browse\Types\Image[] $thumbnailImages
+ * @property string $shortDescription
  * @property string $title
  */
 class ItemSummary extends \DTS\eBaySDK\Types\BaseType
@@ -152,6 +154,12 @@ class ItemSummary extends \DTS\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'itemWebUrl'
         ],
+        'legacyItemId' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'legacyItemId'
+        ],
         'marketingPrice' => [
             'type' => 'DTS\eBaySDK\Browse\Types\MarketingPrice',
             'repeatable' => false,
@@ -181,6 +189,12 @@ class ItemSummary extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'shippingOptions'
+        ],
+        'shortDescription' => [
+            'type' => 'string',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'shortDescription'
         ],
         'thumbnailImages' => [
             'type' => 'DTS\eBaySDK\Browse\Types\Image',

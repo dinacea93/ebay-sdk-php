@@ -152,7 +152,7 @@ class UriResolver
                 $value = join(',', $value);
             } elseif (is_bool($value)) {
                 $value = $value ? 'true' : 'false';
-            } elseif (is_callable($value)) {
+            } elseif (is_callable($value) && $value != "COMPACT") {
                 $value = $value();
             }
             $query[] = $param.'='.urlencode($value);
